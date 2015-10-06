@@ -24,7 +24,7 @@ float s = random(480);
 
  void draw() {
    background(0);
-   frameRate(250);
+   frameRate(1250);
    image(bg1,y%640,0);
     y++;
    image(bg2,z%640,0);     
