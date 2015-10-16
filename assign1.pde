@@ -18,13 +18,13 @@ int x = 0;
 int y = 0;
 int z = -640;
 
-float c = random(170);
-float t = random(640);
-float s = random(480);
+int c = floor(random(170));
+int t = floor(random(640));
+int s = floor(random(480));
 
  void draw() {
    background(0);
-   frameRate(1250);
+   frameRate(250);
    image(bg1,y%640,0);
     y++;
    image(bg2,z%640,0);     
@@ -59,3 +59,6 @@ float s = random(480);
    image(treasure,t,s);  
    
 }
+    
+   
+   
