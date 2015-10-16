@@ -25,9 +25,7 @@ int s = floor(random(480));
  void draw() {
    background(0);
    frameRate(250);
-   image(bg1,y%640,0);
-    y++;
-   image(bg2,z%640,0);     
+    y++;  
     z++;
    if(y==640){
     y=-640;
@@ -35,6 +33,8 @@ int s = floor(random(480));
    if(z==640){
     z=-640;
     }
+    image(bg1,y%640,0);
+    image(bg2,z%640,0);
    /*while(q==0){
     
     y=y-640;
